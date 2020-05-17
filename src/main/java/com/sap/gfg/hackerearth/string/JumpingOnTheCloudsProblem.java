@@ -1,4 +1,4 @@
-package com.sap.gfg.hackerearth;
+package com.sap.gfg.hackerearth.string;
 
 /**
  * Emma is playing a new mobile game that starts with consecutively numbered
