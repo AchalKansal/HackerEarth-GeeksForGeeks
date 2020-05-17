@@ -15,7 +15,7 @@ package com.sap.gfg.hackerearth;
  * the following two paths: 0-> 2-> 4 -> 6 or 0->2->3->4->6. The first path
  * takes 3 jumps while the second takes 4 .
  * 
- * unction Description
+ * function Description
  * 
  * Complete the jumpingOnClouds function in the editor below. It should return
  * the minimum number of jumps required, as an integer.
@@ -30,7 +30,10 @@ package com.sap.gfg.hackerearth;
  * line contains space-separated binary integers describing clouds c[i] where
  * 0<= i <n.
  * 
- * Sample input: 7 0 0 1 0 0 1 0
+ * Sample input: 7
+ * 
+ * 
+ * 0 0 1 0 0 1 0
  * 
  * Sample Output : 4
  *
@@ -51,9 +54,10 @@ public class JumpingOnTheCloudsProblem {
 	}
 
 	static int jumpingOnClouds(int[] c) {
-		int jumps = 0;
-		for (int i = 0; i < c.length; i++) {
-
+		int jumps = -1;
+		for (int i = 0; i < c.length; i++, jumps++) {
+			if (i < c.length - 2 && c[i + 2] == 0)
+				i++;
 		}
 		return jumps;
 	}
