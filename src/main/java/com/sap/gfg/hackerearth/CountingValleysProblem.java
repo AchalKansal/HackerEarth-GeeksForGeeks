@@ -1,4 +1,4 @@
-package com.sap.gfg.prac;
+package com.sap.gfg.hackerearth;
 
 public class CountingValleysProblem {
 	public static void main(String[] args) {
