@@ -1,4 +1,4 @@
-package com.sap.gfg.hackerearth;
+package com.sap.gfg.hackerearth.string;
 
 /**
  * 
