@@ -1,4 +1,4 @@
-package com.sap.gfg.prac;
+package com.sap.gfg.hackerearth;
 
 import java.util.HashSet;
 import java.util.Set;
