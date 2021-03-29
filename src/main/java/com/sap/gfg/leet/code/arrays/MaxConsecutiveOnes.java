@@ -22,6 +22,7 @@ public class MaxConsecutiveOnes {
         nums[ 3 ] = 1;
         nums[ 4 ] = 1;
         nums[ 5 ] = 1;
+        getMaxLength(nums);
         findMaxConsecutiveOnes ( nums );
     }
 
@@ -42,5 +43,30 @@ public class MaxConsecutiveOnes {
 			temp = occurance;
 		}
 		return temp;
+	}
+
+	// More Compact solution.
+    static int getMaxLength(int arr[])
+	{
+
+		int count = 0; // intitialize count
+		int result = 0; // initialize max
+
+		for (int i = 0; i < arr.length; i++) {
+
+			// Reset count when 0 is found
+			if (arr[i] == 0)
+				count = 0;
+
+			// If 1 is found, increment count
+			// and update result if count becomes
+			// more.
+			else {
+				count++;// increase count
+				result = Math.max(result, count);
+			}
+		}
+		System.out.println(result);
+		return result;
 	}
 }
