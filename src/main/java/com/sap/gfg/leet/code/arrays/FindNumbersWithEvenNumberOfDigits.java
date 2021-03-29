@@ -31,8 +31,13 @@ package com.sap.gfg.leet.code.arrays;
  */
 public class FindNumbersWithEvenNumberOfDigits {
 	public static void main(String[] args) {
-
-		findNumbers(null);
+		int[] nums = new int[ 5 ];
+		nums[ 0 ] = 12;
+		nums[ 1 ] = 345;
+		nums[ 2 ] = 2;
+		nums[ 3 ] = 6;
+		nums[ 4 ] = 7888;
+		findNumbers(nums);
 	}
 
 	public static int findNumbers(int[] nums) {
