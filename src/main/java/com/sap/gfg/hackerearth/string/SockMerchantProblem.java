@@ -41,7 +41,7 @@ public class SockMerchantProblem {
 		arr[7] = 10;
 		arr[8] = 20;
 
-		Set<Integer> colors = new HashSet<>();
+		Set<Integer> colors = new HashSet<Integer>();
 		int pairs = 0;
 		for (Integer color : arr) {
 			if (!colors.contains(color)) {
