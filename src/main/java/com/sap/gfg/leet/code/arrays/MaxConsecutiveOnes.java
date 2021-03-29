@@ -66,7 +66,6 @@ public class MaxConsecutiveOnes {
 				result = Math.max(result, count);
 			}
 		}
-		System.out.println(result);
 		return result;
 	}
 }

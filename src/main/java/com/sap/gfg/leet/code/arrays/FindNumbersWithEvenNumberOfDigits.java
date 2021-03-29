@@ -30,4 +30,13 @@ package com.sap.gfg.leet.code.arrays;
  * 1 <= nums[i] <= 10^5
  */
 public class FindNumbersWithEvenNumberOfDigits {
+	public static void main(String[] args) {
+
+		findNumbers(null);
+	}
+
+	public static int findNumbers(int[] nums) {
+		return 0;
+
+	}
 }
