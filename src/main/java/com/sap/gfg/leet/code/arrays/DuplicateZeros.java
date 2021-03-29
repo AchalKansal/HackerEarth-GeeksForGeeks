@@ -28,10 +28,37 @@ package com.sap.gfg.leet.code.arrays;
  */
 public class DuplicateZeros {
     public static void main ( String[] args ) {
+        int[] nums = new int[ 8 ];
+        nums[ 0 ] = 1;
+        nums[ 1 ] = 0;
+        nums[ 2 ] = 2;
+        nums[ 3 ] = 3;
+        nums[ 4 ] = 0;
+        nums[ 5 ] = 4;
+        nums[ 6 ] = 5;
+        nums[ 7 ] = 0;
 
+        duplicateZeros(nums);
     }
 
-    public static void duplicateZeros(int[] arr) {
+	private static int[] duplicateZeros(int[] nums) {
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] == 0) {
+				callShift(nums, i);
+			}
+		}
+		return nums;
+	}
 
-    }
+	private static void callShift(int[] nums, int position) {
+		for (int i = nums.length - 1 ; i > position; i--) {
+			if(i-1 != position) {
+				nums[i] = nums[i-1];
+			}
+		}
+		// this check is necessary as position can exceed the length of the array.
+		if(position+1 < nums.length) {
+			nums[position+1] = 0;
+		}
+	}
 }
