@@ -15,20 +15,29 @@ package com.sap.gfg.leet.code.arrays;
  */
 public class MaxConsecutiveOnes {
     public static void main ( String[] args ) {
-        int[] nums = new int[ 5 ];
+        int[] nums = new int[ 6 ];
         nums[ 0 ] = 1;
-        nums[ 1 ] = 1;
-        nums[ 2 ] = 0;
+        nums[ 1 ] = 0;
+        nums[ 2 ] = 1;
         nums[ 3 ] = 1;
-        nums[ 4 ] = 1;
+        nums[ 4 ] = 0;
         nums[ 5 ] = 1;
         findMaxConsecutiveOnes ( nums );
     }
 
-    public static int findMaxConsecutiveOnes ( int[] nums ) {
-        for ( int i = 0; i < nums.length; i++ ) {
-
-        }
-        return 0;
-    }
+	public static int findMaxConsecutiveOnes(int[] nums) {
+		int occurance = 0;
+		int temp = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] == 1) {
+				occurance++;
+			} else {
+				if (occurance > temp) {
+					temp = occurance;
+				}
+				occurance = 0;
+			}
+		}
+		return temp;
+	}
 }

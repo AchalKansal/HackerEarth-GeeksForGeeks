@@ -28,7 +28,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
 	public static int lengthOfLongestSubstring(String input) {
 		String output = "";
 		for (int start = 0; start < input.length(); start++) {
-			Set<Character> visited = new HashSet<>();
+			Set<Character> visited = new HashSet<Character>();
 			int end = start;
 			for (; end < input.length(); end++) {
 				char currChar = input.charAt(end);
