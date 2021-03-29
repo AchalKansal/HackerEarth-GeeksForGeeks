@@ -35,13 +35,26 @@ public class FindNumbersWithEvenNumberOfDigits {
 		nums[ 0 ] = 12;
 		nums[ 1 ] = 345;
 		nums[ 2 ] = 2;
-		nums[ 3 ] = 6;
+		nums[ 3 ] = 61;
 		nums[ 4 ] = 7888;
+
 		findNumbers(nums);
 	}
 
 	public static int findNumbers(int[] nums) {
-		return 0;
-
+		int count = 0;
+		int even = 0;
+		for (int i = 0; i < nums.length; i++) {
+			int temp = nums[i];
+			count = 0;
+			while (temp != 0) {
+				temp = temp / 10;
+				count++;
+			}
+			if (count % 2 == 0) {
+				even++;
+			}
+		}
+		return even;
 	}
 }
