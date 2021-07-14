@@ -6,7 +6,7 @@ import com.learn.concepts.stream.entity.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Reduction {
+public class SequentialReduction {
 
     public static void main ( String[] args ) {
 
