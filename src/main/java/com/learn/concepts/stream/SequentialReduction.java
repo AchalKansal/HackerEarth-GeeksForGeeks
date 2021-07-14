@@ -1,21 +1,28 @@
 package com.learn.concepts.stream;
 
 
+import com.learn.concepts.stream.entity.User;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Reduction {
+public class SequentialReduction {
 
     public static void main ( String[] args ) {
-        
+
         calculateSumOfListElements ();
         concatenateListOfElements ();
-        calculateSumAgeOfUser();
+        calculateSumAgeOfUser ();
 
     }
 
     private static void calculateSumAgeOfUser () {
+        List<User> list = new ArrayList<> ();
+        list.add ( new User ( "Achal", 27, "123" ) );
+        list.add ( new User ( "Kansal", 28, "123" ) );
 
+        int totalAge = list.stream ().reduce ( 0, ( previous, user ) -> previous + user.getAge (), Integer::sum );
+        System.out.println ( "Age sum: " + totalAge );
     }
 
     private static void concatenateListOfElements () {
