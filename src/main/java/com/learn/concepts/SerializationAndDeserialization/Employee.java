@@ -1,4 +1,4 @@
-package com.learn.concepts.stream.SerializationAndDeserialization;
+package com.learn.concepts.SerializationAndDeserialization;
 
 import java.io.*;
 import java.util.Base64;
