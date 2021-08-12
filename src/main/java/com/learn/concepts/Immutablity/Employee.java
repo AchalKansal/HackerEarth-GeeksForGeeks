@@ -46,5 +46,13 @@ public final class Employee implements Serializable {
   public static void main(String[] args) {
     Employee emp = new Employee("Achal", "Kansal", 28);
     System.out.println(emp.getFirstName());
+
+    // Creating a string object and assigning some value
+    String a  = "Achal";
+    System.out.println (a.hashCode ());
+    // changing the value of the string and then checking the hashcode.
+    a = a.concat ( "Achal " );
+    // it is different from the previous one, showing the new memory allocation happened to the object "a"
+    System.out.println (a.hashCode () );
   }
 }
