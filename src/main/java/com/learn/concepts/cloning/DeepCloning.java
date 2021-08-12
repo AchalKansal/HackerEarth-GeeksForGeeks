@@ -1,5 +1,8 @@
 package com.learn.concepts.cloning;
 
+/**
+ * Reference : https://javaconceptoftheday.com/difference-between-shallow-copy-vs-deep-copy-in-java/
+ */
 public class DeepCloning implements Cloneable {
   private String firstName;
   private String lastName;
