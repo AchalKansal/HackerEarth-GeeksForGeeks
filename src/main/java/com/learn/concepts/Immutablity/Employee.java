@@ -45,6 +45,6 @@ public final class Employee implements Serializable {
   public static void main(String[] args) {
     Employee emp = new Employee("Achal", "Kansal", 28);
     System.out.println(emp.getFirstName ());
-    emp = new Employee("test", "test", 0000);
+    
   }
 }
