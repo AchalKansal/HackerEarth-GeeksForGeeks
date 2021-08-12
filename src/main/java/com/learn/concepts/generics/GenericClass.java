@@ -1,5 +1,14 @@
 package com.learn.concepts.generics;
 
+/**
+ * Advantages of Generic
+ * 1. Stronger type checks at compile time.
+ * 2. Elimination of casts
+ *    Eg. Integer obj = (Integer) obj2;
+ * 3. Enabling programmers to implement generic algorithms.
+ *
+ * Ref : https://docs.oracle.com/javase/tutorial/java/generics/why.html
+ */
 public class GenericClass<T> {
   private T object;
 
