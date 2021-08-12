@@ -3,6 +3,11 @@ package com.learn.concepts.wildcards;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * We use the Unbounded wildcards when we want to specify the type of wildcard with the wildcard character ?.
+ * We generally use this wildcard when the code inside the method is using the Object functionality
+ * and also when the code inside the method does not depend upon the parameter type.
+ */
 public class Unbound {
   public static void printData(List<?> list) {
     System.out.println(list);

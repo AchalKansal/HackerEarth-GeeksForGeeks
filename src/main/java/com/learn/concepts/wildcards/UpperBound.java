@@ -3,6 +3,11 @@ package com.learn.concepts.wildcards;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The Upper Bounded wildcards are the wildcard that relaxes the restriction of the variable type.
+ * That is, if we want to relax the restriction on the type of the variable in the method,
+ * we can use this type of wildcards.
+ */
 public class UpperBound {
   public static void printData(List<? extends Number> list) {
     System.out.println(list);
