@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.Base64;
 
 /**
+ * We use the serialVersionUID attribute to remember versions of a Serializable class
+ * to verify that a loaded class and the serialized object are compatible.
+ * The serialVersionUID attributes of different classes are independent.
+ * Therefore, it is not necessary for different classes to have unique values.
+ *
  * The serialVersionUID attribute is an identifier
  * that is used to serialize/deserialize
  * an object of a Serializable class.
@@ -62,9 +67,9 @@ public class Employee implements Serializable {
                     new ByteArrayInputStream ( data ) );
             Object o = ois.readObject ();
             Employee emp = (Employee) o;
-            System.out.println (emp.getAge ());
-            System.out.println (emp.getFirstName ());
-            System.out.println (emp.getLastName ());
+            System.out.println ( emp.getAge () );
+            System.out.println ( emp.getFirstName () );
+            System.out.println ( emp.getLastName () );
             ois.close ();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace ();
