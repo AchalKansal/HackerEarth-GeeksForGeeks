@@ -1,4 +1,4 @@
-package com.learn.concepts;
+package com.learn.concepts.ComparableVSComparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
