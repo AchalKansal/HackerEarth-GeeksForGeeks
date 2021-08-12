@@ -46,6 +46,8 @@ public class ShallowCloning {
     System.out.println("Object 2: " + sc1.getLastName());
     System.out.println("Updating the value of the shallow object 2");
     sc1.setAge(11);
+    System.out.println(
+        "After updating the value of the object 2 it reflects the object 1 as well. It shows the objects are not disjoints");
     System.out.println("Object 2: " + sc1.getAge());
     System.out.println("Object 1: " + sc.getAge());
   }

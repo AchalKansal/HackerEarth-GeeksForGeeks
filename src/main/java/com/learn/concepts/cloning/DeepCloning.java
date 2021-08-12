@@ -51,6 +51,8 @@ public class DeepCloning implements Cloneable {
     System.out.println("Object 2: " + dc1.getLastName());
     System.out.println("Updating the value of the shallow object 2");
     dc1.setAge(11);
+    System.out.println(
+        "After updating the value of the object 2 it reflects the object 1 as well. It shows the objects are disjoint");
     System.out.println("Object 2: " + dc1.getAge());
     System.out.println("Object 1: " + dc.getAge());
   }
