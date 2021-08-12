@@ -29,21 +29,21 @@ public class ShallowCloning {
     this.age = age;
   }
 
-  public ShallowCloning ( String firstName, String lastName, int age) {
+  public ShallowCloning(String firstName, String lastName, int age) {
     this.firstName = firstName;
     LastName = lastName;
     this.age = age;
   }
 
   public static void main(String[] args) throws CloneNotSupportedException {
-      ShallowCloning sc = new ShallowCloning ( "Achal", "Kansal",28 );
-      ShallowCloning sc1 = sc;
-      System.out.println ("Object 2: "+sc1.getAge ());
-      System.out.println ("Object 2: "+sc1.getFirstName ());
-      System.out.println ("Object 2: "+sc1.getLastName ());
-      System.out.println ("Updating the value of the shallow object 2");
-      sc1.setAge (11);
-      System.out.println ("Object 2: "+sc1.getAge ());
-      System.out.println ("Object 1: "+sc.getAge ());
+    ShallowCloning sc = new ShallowCloning("Achal", "Kansal", 28);
+    ShallowCloning sc1 = sc;
+    System.out.println("Object 2: " + sc1.getAge());
+    System.out.println("Object 2: " + sc1.getFirstName());
+    System.out.println("Object 2: " + sc1.getLastName());
+    System.out.println("Updating the value of the shallow object 2");
+    sc1.setAge(11);
+    System.out.println("Object 2: " + sc1.getAge());
+    System.out.println("Object 1: " + sc.getAge());
   }
 }
