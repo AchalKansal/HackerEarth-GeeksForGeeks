@@ -1,6 +1,6 @@
 package com.learn.concepts.cloning;
 
-public class ShallowCloing {
+public class ShallowCloning {
   private String firstName;
   private String LastName;
   private int age;
@@ -29,15 +29,15 @@ public class ShallowCloing {
     this.age = age;
   }
 
-  public ShallowCloing(String firstName, String lastName, int age) {
+  public ShallowCloning ( String firstName, String lastName, int age) {
     this.firstName = firstName;
     LastName = lastName;
     this.age = age;
   }
 
   public static void main(String[] args) throws CloneNotSupportedException {
-      ShallowCloing sc = new ShallowCloing ( "Achal", "Kansal",28 );
-      ShallowCloing sc1 = sc;
+      ShallowCloning sc = new ShallowCloning ( "Achal", "Kansal",28 );
+      ShallowCloning sc1 = sc;
       System.out.println ("Object 2: "+sc1.getAge ());
       System.out.println ("Object 2: "+sc1.getFirstName ());
       System.out.println ("Object 2: "+sc1.getLastName ());
