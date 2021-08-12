@@ -12,6 +12,8 @@ import java.util.Base64;
  * The serialVersionUID attribute is an identifier
  * that is used to serialize/deserialize
  * an object of a Serializable class.
+ *
+ * https://www.geeksforgeeks.org/serialversionuid-in-java/
  */
 public class Employee implements Serializable {
 
